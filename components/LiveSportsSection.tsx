@@ -163,7 +163,7 @@ export default function LiveSportsSection() {
         <motion.a
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          href="/contact"
+          href="/contact/"
           className="group inline-flex h-12 flex-shrink-0 items-center justify-center gap-2 rounded-xl px-6 text-[13px] sm:text-sm font-bold text-white shadow-[0_8px_24px_rgba(215,44,44,0.25)] transition-shadow hover:shadow-[0_12px_32px_rgba(215,44,44,0.35)]"
           style={{ backgroundColor: RED }}
         >

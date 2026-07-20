@@ -69,7 +69,7 @@ export default function ReadyToExperienceSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact"
+              href="/contact/"
               className="group flex-1 min-w-0 inline-flex h-14 items-center justify-center gap-2 sm:gap-3 rounded-xl pl-2 pr-3 sm:pr-6 text-[12px] sm:text-sm font-bold text-white text-center shadow-[0_10px_28px_rgba(215,44,44,0.28)] transition-shadow hover:shadow-[0_14px_36px_rgba(215,44,44,0.38)]"
               style={{ backgroundColor: RED }}
             >
@@ -85,7 +85,7 @@ export default function ReadyToExperienceSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/subscription-plans"
+              href="/subscription-plans/"
               className="flex-shrink-0 inline-flex h-14 items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 sm:px-6 text-[12px] sm:text-sm font-bold transition-colors hover:bg-zinc-50"
               style={{ color: NAVY }}
             >

@@ -128,7 +128,9 @@ const ALLOW_ALL: MetadataRoute.Robots["rules"] = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: ALLOW_ALL,
+    // Sitemap is a file endpoint — no trailing slash
     sitemap: `${SITE_URL}/sitemap.xml`,
+    // Prefer non-www host for crawlers that honor the Host directive
     host: SITE_URL,
   };
 }

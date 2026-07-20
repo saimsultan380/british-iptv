@@ -8,6 +8,7 @@ import {
   Zap,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import SkewedTextReveal from "@/components/SkewedTextReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhyRequestFreeTrial from "@/components/WhyRequestFreeTrial";
@@ -66,15 +67,14 @@ export default function ContactUsClient() {
 
               {/* LEFT — headline + body + CTA */}
               <div className="lg:col-span-6 flex flex-col text-left order-1">
-                <motion.h1
-                  {...fadeUp(0)}
+                <SkewedTextReveal
                   className="text-[26px] sm:text-4xl lg:text-[40px] font-extrabold tracking-tight leading-[1.15] mb-5"
                   style={{ color: NAVY }}
                 >
                   Contact Us &ndash;{" "}
                   <span style={{ color: RED }}>Request Your IPTV</span>
                   {" "}Free Trial Today
-                </motion.h1>
+                </SkewedTextReveal>
 
                 <motion.div
                   {...fadeUp(0.12)}

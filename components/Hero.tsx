@@ -7,6 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { SkewedLine } from "@/components/SkewedTextReveal";
 
 const NAVY = "#0B1E5C";
 const RED = "#D72C2C";
@@ -58,19 +59,16 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center">
           {/* LEFT: Text content */}
           <div className="lg:col-span-7 xl:col-span-6 order-1">
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            <h1
               className="text-[22px] sm:text-4xl lg:text-[44px] font-bold sm:font-extrabold tracking-tight leading-[1.12]"
               style={{ color: NAVY }}
             >
-              <span className="block">IPTV UK &ndash; Premium IPTV</span>
-              <span className="block">
+              <SkewedLine delay={0}>IPTV UK &ndash; Premium IPTV</SkewedLine>
+              <SkewedLine delay={0.08}>
                 Subscription <span style={{ color: RED }}>UK</span> for Live TV,
-              </span>
-              <span className="block">Sports, Movies &amp; Series</span>
-            </motion.h1>
+              </SkewedLine>
+              <SkewedLine delay={0.16}>Sports, Movies &amp; Series</SkewedLine>
+            </h1>
 
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -122,7 +120,7 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/contact"
+                href="/contact/"
                 className="group inline-flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-4 py-3 shadow-[0_4px_20px_rgba(11,30,92,0.06)] hover:shadow-[0_8px_28px_rgba(11,30,92,0.12)] transition-shadow"
               >
                 <span
@@ -148,7 +146,7 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/subscription-plans"
+                href="/subscription-plans/"
                 className="group inline-flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-4 py-3 shadow-[0_4px_20px_rgba(11,30,92,0.06)] hover:shadow-[0_8px_28px_rgba(11,30,92,0.12)] transition-shadow"
               >
                 <span
@@ -203,7 +201,7 @@ export default function Hero() {
         >
           <motion.a
             whileTap={{ scale: 0.98 }}
-            href="/contact"
+            href="/contact/"
             className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-3.5 min-h-[64px] shadow-[0_4px_18px_rgba(11,30,92,0.07)]"
           >
             <CardIconImage src={HERO_ACTION_IMAGES.freeTrial} alt="Free Trial" />
@@ -220,7 +218,7 @@ export default function Hero() {
 
           <motion.a
             whileTap={{ scale: 0.98 }}
-            href="/subscription-plans"
+            href="/subscription-plans/"
             className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-3.5 min-h-[64px] shadow-[0_4px_18px_rgba(11,30,92,0.07)]"
           >
             <CardIconImage src={HERO_ACTION_IMAGES.viewPlans} alt="View Plans" />
@@ -237,7 +235,7 @@ export default function Hero() {
 
           <motion.a
             whileTap={{ scale: 0.98 }}
-            href="/installation-guide"
+            href="/installation-guide/"
             className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-3.5 min-h-[64px] shadow-[0_4px_18px_rgba(11,30,92,0.07)]"
           >
             <CardIconImage src={HERO_ACTION_IMAGES.installationGuide} alt="Installation Guide" />

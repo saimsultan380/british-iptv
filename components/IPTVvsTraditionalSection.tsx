@@ -110,7 +110,7 @@ export default function IPTVvsTraditionalSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-12 items-center gap-2 rounded-[6px] px-6 text-[13px] sm:text-sm font-bold text-white shadow-lg shadow-red-500/20 transition-colors"
               style={{ backgroundColor: RED }}
             >
@@ -132,7 +132,7 @@ export default function IPTVvsTraditionalSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/installation-guide"
+              href="/installation-guide/"
               className="inline-flex h-12 items-center gap-2 rounded-[6px] border bg-white px-6 text-[13px] sm:text-sm font-bold transition-colors hover:bg-zinc-50"
               style={{ borderColor: "#cbd5e1", color: NAVY }}
             >

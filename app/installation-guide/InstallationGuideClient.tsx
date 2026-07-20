@@ -8,6 +8,7 @@ import {
   Zap,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import SkewedTextReveal from "@/components/SkewedTextReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -39,16 +40,13 @@ export default function InstallationGuideClient() {
 
             {/* LEFT: Heading + body + CTA */}
             <div className="flex flex-col order-1">
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+              <SkewedTextReveal
                 className="text-[28px] sm:text-[36px] lg:text-[38px] font-extrabold tracking-tight leading-[1.1] mb-5"
                 style={{ color: NAVY }}
               >
                 <span style={{ color: RED }}>IPTV</span> Installation Guide –{" "}
                 Easy IPTV Setup for All Compatible Devices
-              </motion.h1>
+              </SkewedTextReveal>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

@@ -269,7 +269,7 @@ function DeviceGuidePanel({ guide }: { guide: UkDeviceGuide }) {
           )}
           {guide.supportCta && (
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-[12.5px] font-bold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: RED }}
             >

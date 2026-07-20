@@ -119,7 +119,7 @@ export default function ChooseRightPlanSection() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                href="/contact"
+                href="/contact/"
                 className="relative z-10 mt-8 inline-flex items-center justify-center gap-2.5 rounded-xl px-6 py-3.5 text-[13px] sm:text-[14px] font-bold text-white shadow-lg transition-opacity hover:opacity-90"
                 style={{ backgroundColor: RED }}
               >

@@ -105,7 +105,7 @@ export default function PremiumIPTVPlanSection() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/contact"
+                href="/contact/"
                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-2xl px-8 py-4 text-[13.5px] sm:text-[14.5px] font-bold text-white shadow-lg shadow-red-500/20 transition-all hover:opacity-95"
                 style={{ backgroundColor: RED }}
               >

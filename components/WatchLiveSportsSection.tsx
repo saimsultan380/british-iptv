@@ -188,7 +188,7 @@ export default function WatchLiveSportsSection() {
           <motion.a
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            href="/contact"
+            href="/contact/"
             className="inline-flex flex-shrink-0 items-center gap-2.5 rounded-xl px-6 py-3.5 text-[13px] sm:text-[14px] font-bold text-white shadow-sm transition-opacity hover:opacity-90 whitespace-nowrap"
             style={{ backgroundColor: RED }}
           >

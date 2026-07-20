@@ -1,39 +1,21 @@
 import { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
+import { canonicalUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${SITE_URL}/`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: `${SITE_URL}/subscription-plans/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/installation-guide/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/reseller-panel/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/contact/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-  ];
+  const routes = [
+    "/",
+    "/subscription-plans/",
+    "/installation-guide/",
+    "/reseller-panel/",
+    "/contact/",
+  ] as const;
+
+  return routes.map((path, index) => ({
+    url: canonicalUrl(path),
+    lastModified: new Date(),
+    changeFrequency: index === 0 ? ("weekly" as const) : ("monthly" as const),
+    priority: index === 0 ? 1.0 : 0.8,
+  }));
 }

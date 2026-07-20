@@ -12,6 +12,7 @@ import {
   Headphones,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import SkewedTextReveal from "@/components/SkewedTextReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -50,17 +51,14 @@ export default function SubscriptionPlansClient() {
 
             {/* LEFT: text content */}
             <div className="lg:col-span-7 order-1">
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              <SkewedTextReveal
                 className="text-[30px] sm:text-4xl lg:text-[44px] font-extrabold tracking-tight leading-[1.12]"
                 style={{ color: NAVY }}
               >
                 IPTV Subscription{" "}
                 <span style={{ color: RED }}>UK</span> &ndash; Premium Streaming
                 for Live TV, Sports, Movies &amp; Series
-              </motion.h1>
+              </SkewedTextReveal>
 
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -104,7 +102,7 @@ export default function SubscriptionPlansClient() {
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href="/contact"
+                  href="/contact/"
                   className="group inline-flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-4 py-3 shadow-[0_4px_20px_rgba(11,30,92,0.06)] hover:shadow-[0_8px_28px_rgba(11,30,92,0.12)] transition-shadow"
                 >
                   <span
@@ -208,7 +206,7 @@ export default function SubscriptionPlansClient() {
             <div className="relative z-10 w-[57%] space-y-3">
               <motion.a
                 whileTap={{ scale: 0.98 }}
-                href="/contact"
+                href="/contact/"
                 className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-3 py-2.5 shadow-[0_4px_18px_rgba(11,30,92,0.07)]"
               >
                 <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-zinc-50 border border-zinc-100">

@@ -33,10 +33,10 @@ export default function Footer() {
             <h4 className="text-[16px] font-bold text-[#0B1E5C] mb-6 uppercase tracking-wider">Navigation</h4>
             <ul className="space-y-4">
               <li><a href="/" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Home</a></li>
-              <li><a href="/installation-guide" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Installation Guide</a></li>
-              <li><a href="/subscription-plans" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Subscription Plans</a></li>
-              <li><a href="/reseller-panel" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Reseller Panel</a></li>
-              <li><a href="/contact" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Contact Us</a></li>
+              <li><a href="/installation-guide/" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Installation Guide</a></li>
+              <li><a href="/subscription-plans/" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Subscription Plans</a></li>
+              <li><a href="/reseller-panel/" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Reseller Panel</a></li>
+              <li><a href="/contact/" className="text-[#343341] hover:text-[#D72C2C] text-[14px] font-semibold transition-colors">Contact Us</a></li>
             </ul>
           </div>
 

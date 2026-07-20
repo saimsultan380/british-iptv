@@ -143,7 +143,7 @@ export default function WhyTrustSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-xl px-6 text-[13px] sm:text-sm font-bold text-white shadow-lg shadow-red-500/20 transition-all"
               style={{ backgroundColor: RED }}
             >
@@ -165,7 +165,7 @@ export default function WhyTrustSection() {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              href="/installation-guide"
+              href="/installation-guide/"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-6 text-[13px] sm:text-sm font-bold transition-all hover:bg-zinc-50"
               style={{ color: NAVY }}
             >

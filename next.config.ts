@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
+const isStaticExport = process.env.STATIC_EXPORT === "true";
+
 const nextConfig: NextConfig = {
-  ...(process.env.STATIC_EXPORT === "true" ? { output: "export" as const } : {}),
+  ...(isStaticExport ? { output: "export" as const } : {}),
   trailingSlash: true,
   images: {
     unoptimized: true,
@@ -18,6 +20,22 @@ const nextConfig: NextConfig = {
     // Lower peak memory of the Webpack dev/build path.
     webpackMemoryOptimizations: true,
   },
+  // Host-based redirects are unsupported with `output: "export"`.
+  // Hostinger static hosting uses public/.htaccess for www → non-www.
+  ...(!isStaticExport
+    ? {
+        async redirects() {
+          return [
+            {
+              source: "/:path*",
+              has: [{ type: "host", value: "www.brit-iptv.co" }],
+              destination: "https://brit-iptv.co/:path*",
+              permanent: true,
+            },
+          ];
+        },
+      }
+    : {}),
 };
 
 export default nextConfig;

@@ -3,7 +3,6 @@ import fs from "fs";
 import path from "path";
 
 const publicDir = "./public";
-const appDir = "./app";
 const MAX_HERO_WIDTH = 1120;
 const HERO_MIN_KB = 100;
 
@@ -53,27 +52,31 @@ async function generateFavicons() {
     return;
   }
 
-  console.log("\nGenerating favicons from logo.PNG...");
+  console.log("\nGenerating favicons from logo.PNG (white background only)...");
 
+  const white = { r: 255, g: 255, b: 255, alpha: 1 };
+
+  // Ensure schema + all icons match logo.PNG on white — never navy/blue
   const sizes = [
-    { out: path.join(publicDir, "favicon.png"), size: 32 },
-    { out: path.join(appDir, "icon.png"), size: 32 },
+    { out: path.join(publicDir, "logo-schema.png"), size: 512 },
+    { out: path.join(publicDir, "favicon-48.png"), size: 48 },
+    { out: path.join(publicDir, "favicon-96.png"), size: 96 },
+    { out: path.join(publicDir, "favicon.png"), size: 48 },
+    { out: path.join(publicDir, "favicon.ico"), size: 48 },
     { out: path.join(publicDir, "apple-touch-icon.png"), size: 180 },
-    { out: path.join(appDir, "apple-icon.png"), size: 180 },
     { out: path.join(publicDir, "icon-192.png"), size: 192 },
     { out: path.join(publicDir, "icon-512.png"), size: 512 },
   ];
 
   for (const { out, size } of sizes) {
-    const buffer = await sharp(logoPath)
+    await sharp(logoPath)
       .resize(size, size, {
         fit: "contain",
-        background: { r: 255, g: 255, b: 255, alpha: 0 },
+        background: white,
       })
+      .flatten({ background: "#ffffff" })
       .png({ compressionLevel: 9 })
-      .toBuffer();
-
-    fs.writeFileSync(out, buffer);
+      .toFile(out);
     console.log(`  Created ${out} (${size}x${size})`);
   }
 }
@@ -96,7 +99,10 @@ async function optimize() {
     const filePath = path.join(publicDir, file);
     if (
       file === "logo.PNG" ||
+      file === "logo-schema.png" ||
       file === "favicon.png" ||
+      file === "favicon.ico" ||
+      file.startsWith("favicon-") ||
       file.startsWith("icon-") ||
       file === "apple-touch-icon.png"
     ) {

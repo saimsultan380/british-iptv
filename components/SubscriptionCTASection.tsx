@@ -61,7 +61,7 @@ export default function SubscriptionCTASection() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="/contact"
+              href="/contact/"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-xl px-7 sm:px-9 text-[13px] sm:text-sm font-bold text-white shadow-[0_10px_28px_rgba(215,44,44,0.28)] transition-shadow hover:shadow-[0_14px_36px_rgba(215,44,44,0.38)] whitespace-nowrap"
               style={{ backgroundColor: RED }}
             >

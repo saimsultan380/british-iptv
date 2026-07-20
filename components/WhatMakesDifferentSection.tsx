@@ -123,7 +123,7 @@ export default function WhatMakesDifferentSection() {
               {/* Red — Start Free Trial (grows to fill remaining space) */}
               <motion.a
                 whileTap={{ scale: 0.97 }}
-                href="/contact"
+                href="/contact/"
                 className="flex flex-1 flex-col items-center justify-center gap-1.5 rounded-xl px-3 py-3 text-white shadow-sm text-center"
                 style={{ backgroundColor: RED }}
               >
@@ -152,7 +152,7 @@ export default function WhatMakesDifferentSection() {
               {/* Outline — Installation Guide */}
               <motion.a
                 whileTap={{ scale: 0.97 }}
-                href="/installation-guide"
+                href="/installation-guide/"
                 className="flex flex-1 flex-col items-center justify-center gap-1.5 rounded-xl border border-zinc-200 bg-white px-3 py-3 shadow-sm text-center"
                 style={{ color: NAVY }}
               >
@@ -172,7 +172,7 @@ export default function WhatMakesDifferentSection() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/contact"
+                href="/contact/"
                 className="inline-flex items-center gap-3 rounded-xl px-5 py-3.5 text-[13px] font-bold text-white shadow-sm transition-colors"
                 style={{ backgroundColor: RED }}
               >
@@ -204,7 +204,7 @@ export default function WhatMakesDifferentSection() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/installation-guide"
+                href="/installation-guide/"
                 className="inline-flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-5 py-3.5 text-[13px] font-bold shadow-[0_2px_12px_rgba(11,30,92,0.06)] hover:shadow-[0_4px_20px_rgba(11,30,92,0.1)] transition-shadow"
                 style={{ color: NAVY }}
               >

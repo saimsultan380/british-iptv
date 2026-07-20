@@ -1,19 +1,31 @@
+# Canonical URL rules for Hostinger (Apache) static export.
+# Canonical form: https://brit-iptv.co/.../  (HTTPS, non-www, trailing slash)
+
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # 1. Force trailing slash on all URLs (prevents 403 on directories)
+
+  # 1. Force HTTPS + non-WWW → https://brit-iptv.co
+  RewriteCond %{HTTP_HOST} ^(www\.)?brit-iptv\.co$ [NC]
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.brit-iptv\.co$ [NC]
+  RewriteRule ^ https://brit-iptv.co%{REQUEST_URI} [L,R=301]
+
+  # 2. Force trailing slash (skip real files and extensioned assets)
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,8}$
+  RewriteCond %{REQUEST_URI} !/$
   RewriteRule ^(.*)$ /$1/ [L,R=301]
+</IfModule>
 
-  # 2. Map clean URLs with trailing slashes to .html files 
-  # (e.g., /installation-guide/ -> /installation-guide.html)
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-  RewriteRule ^(.*)/$ $1.html [L]
+# Proper 404 status for unknown routes (Next.js static export outputs /404.html)
+ErrorDocument 404 /404.html
 
-  # 3. Error 404 handling
-  ErrorDocument 404 /404.html
+# Discourage indexing of the error document when served directly
+<IfModule mod_headers.c>
+  <Files "404.html">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </Files>
 </IfModule>

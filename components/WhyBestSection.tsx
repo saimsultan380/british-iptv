@@ -84,7 +84,7 @@ export default function WhyBestSection() {
           <motion.a
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            href="/contact"
+            href="/contact/"
             className="mt-6 sm:mt-8 inline-flex h-12 w-fit items-center gap-2 rounded-[6px] px-6 text-[13px] sm:text-sm font-bold text-white shadow-lg shadow-red-500/20 transition-colors"
             style={{ backgroundColor: RED }}
           >

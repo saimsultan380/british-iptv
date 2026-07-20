@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Rocket } from "lucide-react";
 import { motion } from "framer-motion";
+import SkewedTextReveal from "@/components/SkewedTextReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -64,21 +65,15 @@ export default function ResellerPanelClient() {
                 </span>
               </motion.div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.75,
-                  ease: [0.22, 1, 0.36, 1],
-                  delay: 0.05,
-                }}
+              <SkewedTextReveal
+                delay={0.05}
                 className="text-[26px] sm:text-4xl lg:text-[46px] font-extrabold tracking-tight leading-[1.12] mb-4 sm:mb-5"
                 style={{ color: NAVY }}
               >
                 IPTV Reseller UK &ndash; Start Your IPTV{" "}
                 <span style={{ color: RED }}>Business</span> with the Best IPTV
                 Reseller Panel
-              </motion.h1>
+              </SkewedTextReveal>
 
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
