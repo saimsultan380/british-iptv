@@ -17,11 +17,12 @@ export const DEFAULT_TITLE =
 export const DEFAULT_DESCRIPTION =
   "Stream 20,000+ live channels, movies, and series with IPTV UK. Instant activation, buffer-free HD/4K quality, multi-device support, and a free 24-hour trial.";
 
-/** Square brand mark — same as public/logo.PNG (white background). */
-export const SITE_LOGO_PATH = "/logo.PNG";
-export const SITE_LOGO_WIDTH = 1254;
-export const SITE_LOGO_HEIGHT = 1254;
+/** Site logo in header/footer (transparent). Google schema uses white-bg version. */
+export const SITE_LOGO_PATH = "/logo-schema.png";
+export const SITE_LOGO_WIDTH = 1024;
+export const SITE_LOGO_HEIGHT = 1024;
 export const SITE_FAVICON_PATH = "/favicon-48.png";
+export const SITE_HEADER_LOGO_PATH = "/logo.PNG";
 
 /**
  * Build a canonical absolute URL with a trailing slash.
