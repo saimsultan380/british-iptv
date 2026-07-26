@@ -37,8 +37,10 @@ export const metadata: Metadata = {
   description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,
   metadataBase: new URL(SITE_URL),
+  // Relative "./" resolves to each route's own URL (not the homepage).
+  // Child pages still set absolute canonicals via pageMetadata().
   alternates: {
-    canonical: canonicalUrl("/"),
+    canonical: "./",
   },
   robots: {
     index: true,

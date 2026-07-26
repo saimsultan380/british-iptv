@@ -1,16 +1,24 @@
-import { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InstallationGuideClient from "./InstallationGuideClient";
-import { canonicalUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "IPTV UK Installation Guide – Easy Setup for All Compatible Devices",
   description:
     "Step-by-step IPTV UK installation for Firestick, Smart TV, Android, iPhone, MAG Box, PC, Mac, Enigma2, and Roku. Get set up in under 5 minutes with our complete setup guide.",
-  alternates: {
-    canonical: canonicalUrl("/installation-guide/"),
-  },
-};
+  path: "/installation-guide/",
+});
 
 export default function InstallationGuide() {
-  return <InstallationGuideClient />;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Installation Guide", path: "/installation-guide/" },
+        ]}
+      />
+      <InstallationGuideClient />
+    </>
+  );
 }

@@ -12,10 +12,12 @@ import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-zinc-950 font-sans antialiased flex flex-col">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
       <Header />
       <Hero />
       <ScrollReveal>
