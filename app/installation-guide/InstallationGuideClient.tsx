@@ -44,8 +44,8 @@ export default function InstallationGuideClient() {
                 className="text-[28px] sm:text-[36px] lg:text-[38px] font-extrabold tracking-tight leading-[1.1] mb-5"
                 style={{ color: NAVY }}
               >
-                <span style={{ color: RED }}>IPTV</span> Installation Guide –{" "}
-                Easy IPTV Setup for All Compatible Devices
+                <span style={{ color: RED }}>IPTV</span> Installation Guide UK
+                &ndash; Setup for Firestick, Android, Smart TVs &amp; More
               </SkewedTextReveal>
 
               <motion.div

@@ -56,7 +56,7 @@ export default function SubscriptionPlansClient() {
                 style={{ color: NAVY }}
               >
                 IPTV Subscription{" "}
-                <span style={{ color: RED }}>UK</span> &ndash; Premium Streaming
+                <span style={{ color: RED }}>UK</span> &ndash; Flexible Plans
                 for Live TV, Sports, Movies &amp; Series
               </SkewedTextReveal>
 

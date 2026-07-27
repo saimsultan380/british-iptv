@@ -3,9 +3,9 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InstallationGuideClient from "./InstallationGuideClient";
 
 export const metadata = pageMetadata({
-  title: "IPTV UK Installation Guide – Easy Setup for All Compatible Devices",
+  title: "IPTV Installation Guide UK – Firestick, Smart TV & More",
   description:
-    "Step-by-step IPTV UK installation for Firestick, Smart TV, Android, iPhone, MAG Box, PC, Mac, Enigma2, and Roku. Get set up in under 5 minutes with our complete setup guide.",
+    "Follow our IPTV Installation Guide for Firestick, Android, Smart TVs, Apple devices, Windows and Mac, with clear steps and setup assistance.",
   path: "/installation-guide/",
 });
 

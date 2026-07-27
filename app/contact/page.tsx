@@ -3,9 +3,9 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ContactUsClient from "./ContactUsClient";
 
 export const metadata = pageMetadata({
-  title: "Contact IPTV UK – Free Trial, Setup Guidance & Support",
+  title: "IPTV Free Trial UK – Contact Support & Start Today",
   description:
-    "Contact IPTV UK on WhatsApp for a free 24-hour trial, setup guidance, account activation, device installation help, and subscription support. Real human responses within minutes.",
+    "Request an IPTV free trial in the UK or contact our team for subscription advice, installation help, renewals and technical support on popular devices.",
   path: "/contact/",
 });
 

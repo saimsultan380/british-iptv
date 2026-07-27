@@ -70,8 +70,8 @@ export default function ResellerPanelClient() {
                 className="text-[26px] sm:text-4xl lg:text-[46px] font-extrabold tracking-tight leading-[1.12] mb-4 sm:mb-5"
                 style={{ color: NAVY }}
               >
-                IPTV Reseller UK &ndash; Start Your IPTV{" "}
-                <span style={{ color: RED }}>Business</span> with the Best IPTV
+                IPTV Reseller UK &ndash; Start Your{" "}
+                <span style={{ color: RED }}>Business</span> with a Professional
                 Reseller Panel
               </SkewedTextReveal>
 

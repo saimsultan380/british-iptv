@@ -65,9 +65,9 @@ export default function Hero() {
             >
               <SkewedLine delay={0}>IPTV UK &ndash; Premium IPTV</SkewedLine>
               <SkewedLine delay={0.08}>
-                Subscription <span style={{ color: RED }}>UK</span> for Live TV,
+                Subscription for Live TV, Sports,
               </SkewedLine>
-              <SkewedLine delay={0.16}>Sports, Movies &amp; Series</SkewedLine>
+              <SkewedLine delay={0.16}>Movies &amp; Series</SkewedLine>
             </h1>
 
             <motion.div

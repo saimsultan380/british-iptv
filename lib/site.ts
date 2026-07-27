@@ -12,10 +12,10 @@ export const SITE_ALTERNATE_NAMES = [
 ] as const;
 
 export const DEFAULT_TITLE =
-  "IPTV UK – Premium IPTV Subscription | 4K Streaming & Free Trial";
+  "IPTV UK – Premium IPTV Subscription for Live TV & Sports";
 
 export const DEFAULT_DESCRIPTION =
-  "Stream 20,000+ live channels, movies, and series with IPTV UK. Instant activation, buffer-free HD/4K quality, multi-device support, and a free 24-hour trial.";
+  "Explore a premium IPTV UK service for live TV, sports, movies and popular series. Compare flexible plans, request a 24-hour trial and get setup support.";
 
 /** Site logo in header/footer (transparent). Google schema uses white-bg version. */
 export const SITE_LOGO_PATH = "/logo-schema.png";

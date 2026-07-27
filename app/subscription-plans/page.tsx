@@ -3,9 +3,9 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import SubscriptionPlansClient from "./SubscriptionPlansClient";
 
 export const metadata = pageMetadata({
-  title: "IPTV UK Subscription Plans – Premium Streaming at Discounted Pricing",
+  title: "IPTV Subscription UK – Flexible Plans, Sports & Movies",
   description:
-    "Explore IPTV UK subscription plans with instant activation, HD/4K streaming, and flexible 1 to 12 month options. Get discounted pricing and start streaming on all your devices today.",
+    "Compare IPTV Subscription UK plans for live TV, sports, movies and series. Choose your duration, check connection options and request a 24-hour trial.",
   path: "/subscription-plans/",
 });
 

@@ -71,9 +71,9 @@ export default function ContactUsClient() {
                   className="text-[26px] sm:text-4xl lg:text-[40px] font-extrabold tracking-tight leading-[1.15] mb-5"
                   style={{ color: NAVY }}
                 >
-                  Contact Us &ndash;{" "}
-                  <span style={{ color: RED }}>Request Your IPTV</span>
-                  {" "}Free Trial Today
+                  Contact Our IPTV UK Team &ndash;{" "}
+                  <span style={{ color: RED }}>Request a Free Trial</span>
+                  {" "}or Get Support
                 </SkewedTextReveal>
 
                 <motion.div
