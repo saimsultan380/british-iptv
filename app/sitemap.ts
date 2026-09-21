@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subscription-plans/",
     "/installation-guide/",
     "/reseller-panel/",
+    "/blog/",
     "/contact/",
   ] as const;
 

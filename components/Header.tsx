@@ -27,11 +27,12 @@ export default function Header() {
           </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-8 text-[15px] font-semibold text-zinc-700">
+        <nav className="hidden md:flex items-center gap-6 xl:gap-8 text-[15px] font-semibold text-zinc-700">
           <a href="/" className="hover:text-[#D72C2C] transition-colors">Home</a>
           <a href="/installation-guide/" className="hover:text-[#D72C2C] transition-colors">Installation Guide</a>
           <a href="/subscription-plans/" className="hover:text-[#D72C2C] transition-colors">Subscription Plans</a>
           <a href="/reseller-panel/" className="hover:text-[#D72C2C] transition-colors">Reseller Panel</a>
+          <a href="/blog/" className="hover:text-[#D72C2C] transition-colors">Blog</a>
           <a href="/contact/" className="hover:text-[#D72C2C] transition-colors">Contact Us</a>
         </nav>
 
@@ -70,6 +71,7 @@ export default function Header() {
               <a href="/installation-guide/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#D72C2C] transition-colors">Installation Guide</a>
               <a href="/subscription-plans/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#D72C2C] transition-colors">Subscription Plans</a>
               <a href="/reseller-panel/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#D72C2C] transition-colors">Reseller Panel</a>
+              <a href="/blog/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#D72C2C] transition-colors">Blog</a>
               <a href="/contact/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#D72C2C] transition-colors">Contact Us</a>
             </nav>
             <div className="pt-6 mt-4 border-t border-zinc-100/50">
