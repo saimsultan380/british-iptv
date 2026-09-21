@@ -5,7 +5,7 @@ import BlogClient from "./BlogClient";
 export const metadata = pageMetadata({
   title: "Blog – British IPTV UK Guides, News & Updates",
   description:
-    "Explore the latest British IPTV blog posts, tutorials, streaming guides, and news updates.",
+    "Explore the latest British IPTV blogs posts, tutorials, streaming guides, and news updates.",
   path: "/blog/",
 });
 
